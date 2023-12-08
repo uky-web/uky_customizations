@@ -4,7 +4,7 @@
     "license": "MIT",
     "type": "drupal-custom-module",
     "support":{
-        "source": "https://github.com/uky-web/test_ukd8_customizations"
+        "source": "https://github.com/uky-web/uky_customizations"
     },
     "authors": [
         {
