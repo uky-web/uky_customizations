@@ -389,7 +389,6 @@ class Extension extends \Twig\Extension\AbstractExtension {
    * Simplify a date range
    */
   public function simplifyDateRange($start, $end, $date_format = 'medium', $time_format = 'short', $range_separator = null, $date_time_separator = null) {
-    require_once(__DIR__ . '/../../vendor/autoload.php');
     $date_format = $this->getIntlDateFormat($date_format);
     $time_format = $this->getIntlDateFormat($time_format);
   
