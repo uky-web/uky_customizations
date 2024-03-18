@@ -3,7 +3,7 @@
   "description": "UKD8 theme and admin support features.",
   "license": "MIT",
   "type": "drupal-custom-module",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "support": {
     "source": "https://github.com/uky-web/uky_customizations"
   },
