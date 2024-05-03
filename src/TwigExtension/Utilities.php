@@ -16,7 +16,7 @@ class Utilities {
     if ($expr->hasAttribute('value')) {
         $name = $expr->getAttribute('value');
     }
-    if ((strpos($name, '@')!==0) && (strpos($name, '.html.twig')===FALSE)) {
+    if ((strpos($name, '@')!==0) && (strpos($name, '.html.twig')===FALSE) && (strpos($name, ':') === FALSE)) {
       // convert from patternlab syntax
       $parts = explode('-', $name);
       $type = array_shift($parts);
