@@ -3,7 +3,7 @@
   "description": "UKD8 theme and admin support features.",
   "license": "MIT",
   "type": "uky-web-module",
-  "version": "3.10.0",
+  "version": "3.11.0",
   "support": {
     "source": "https://github.com/uky-web/uky_customizations"
   },
