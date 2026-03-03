@@ -347,7 +347,20 @@ class Extension extends \Twig\Extension\AbstractExtension {
    */
   public function socialMatcher($url) {
     $components = parse_url($url);
-    $host_pieces = explode('.', $components['host']);
+    if (empty($components['host'])) {
+      return '';
+    }
+
+    $host = strtolower($components['host']);
+    // Normalize Bluesky domains to a single icon name.
+    if (strpos($host, 'bsky.app') !== false || strpos($host, 'bluesky') !== false || strpos($host, 'bsky') !== false) {
+      return 'bluesky';
+    }
+
+    $host_pieces = explode('.', $host);
+    if (count($host_pieces) < 2) {
+      return $host;
+    }
     return $host_pieces[count($host_pieces) - 2];
   } 
 
